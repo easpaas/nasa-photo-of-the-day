@@ -2,4 +2,8 @@
   background-color: black;
   color: white;
   border: 5px solid #15418c;
+  font-family: Nasalization;
+}
+.header p {
+  font-family: Arial, Helvetica, sans-serif;
 }
