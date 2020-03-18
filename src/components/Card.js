@@ -1,13 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import '../components/Card.css';
+import Axios from 'axios';
 
 const Card = () => {
   // store data from NASA API 
   const [data, setData] = useState([]);
 
-  // TODO 
   // useEffect(() => {
-  //   // TODO axios to NASA API 
+  //   Axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+  //   .then(response => {
+  //     console.log(response)
+  //     setData(response.data);
+  //   })
+  //   .catch(error => {
+  //     console.log(error)
+  //   })
   // }, []);
 
   return (
@@ -16,14 +23,14 @@ const Card = () => {
 
         {/* TODO insert correct image url */}
 
-        <img>{/* data.img */}</img>
+        <img src={data.url} alt="astronomy" />
       </div>
       <div className="content">
 
         {/* TODO insert data from NASA API */}
 
-        <p>{/* data.title */}</p>
-        <p>{/* data.description */}</p>
+        <p className="bold">{/* data.title */}</p>
+        <p>{/* data.explanation */}</p>
       </div>
     </div>
   )
