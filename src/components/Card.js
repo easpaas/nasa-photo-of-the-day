@@ -13,6 +13,8 @@ const Card = ({data}) => {
       <Content
         title={data.title}
         explanation={data.explanation}
+        copyright={data.copyright}
+        dated={data.date}
       />
     </div>
   );

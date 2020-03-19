@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import '../components/CardContainer.css';
 import Card from './Card';
-import Axios from 'axios';
 
 const CardContainer = ({data}) => {
 
