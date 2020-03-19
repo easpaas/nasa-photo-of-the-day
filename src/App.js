@@ -4,6 +4,13 @@ import Header from './components/Header';
 import CardContainer from './components/CardContainer'; 
 import Footer from './components/Footer';
 import Axios from "axios";
+import styled from 'styled-components';
+
+
+  // styled component
+  const Wrapper = styled.div`
+    text-align: center;
+  `;
 
 function App() {
   const [data, setData] = useState([]);
@@ -15,12 +22,12 @@ function App() {
       setData(response.data);
     })
     .catch(error => {
-      console.log(error)
+      console.log(error);
     })
   }, [date]);
 
   return (
-    <div className="App">
+    <Wrapper>
       <Header 
         date={date}
         setDate={setDate} 
@@ -29,7 +36,7 @@ function App() {
         data={data} 
       />
       <Footer />
-    </div>
+    </Wrapper>
   );
 }
 
