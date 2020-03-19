@@ -7,10 +7,10 @@ import Axios from "axios";
 import styled from 'styled-components';
 
 
-  // styled component
-  const Wrapper = styled.div`
-    text-align: center;
-  `;
+// styled component
+const Wrapper = styled.div`
+  text-align: center;
+`;
 
 function App() {
   const [data, setData] = useState([]);
