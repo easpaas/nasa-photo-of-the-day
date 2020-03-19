@@ -1,6 +1,6 @@
 import React from 'react';
-import '../components/Header.css';
 import Search from './Search';
+import styled from 'styled-components';
 
 const HeadStyles = styled.div`
   background-color: black;

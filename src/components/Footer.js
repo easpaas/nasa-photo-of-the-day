@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import styled from 'styled-components';
 
 const FooterStyle = styled.div`
   background-color: black;

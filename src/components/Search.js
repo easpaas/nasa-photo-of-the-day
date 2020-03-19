@@ -11,7 +11,7 @@ const Search = ({date, setDate}) => {
   }
 
   return (
-    <div className="search">
+    <div>
       <form onSubmit={handleSubmit}>
         <input type="date" value={date} onChange={handleChange} />
         <input type="submit" value="Submit" />

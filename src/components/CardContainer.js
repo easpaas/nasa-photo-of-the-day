@@ -1,13 +1,18 @@
 import React from 'react';
 import '../components/CardContainer.css';
 import Card from './Card';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  border: 1px solid white;
+  margin: 5%;
+`;
 
 const CardContainer = ({data}) => {
-
   return (
-    <div className="container">
+    <Container>
       <Card data={data} />
-    </div>
+    </Container>
   )
 }
 
