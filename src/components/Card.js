@@ -1,16 +1,19 @@
 import React from 'react';
 import './CardContainer.css';
+import CardImage from './CardImage';
+import Content from './Content';
 
 const Card = ({data}) => {
   return (
-    <div>
-      <div className="image">
-        <img src={data.url} alt="astronomy" />
-      </div>
-      <div className="content">
-        <h3 className="bold">{data.title}</h3>
-        <p>{data.explanation}</p>
-      </div> 
+    <div className="card">
+      <CardImage 
+        image={data.url} 
+        title={data.title}
+      />
+      <Content
+        title={data.title}
+        explanation={data.explanation}
+      />
     </div>
   );
 }
